@@ -1,0 +1,92 @@
+bplist00Ñ_WebMainResourceÕ	
+_WebResourceData_WebResourceMIMEType_WebResourceTextEncodingName_WebResourceFrameName^WebResourceURLO 5<html><head></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">Started by user anonymous
+Building in workspace /Users/Alicia/.jenkins/jobs/FinalExam - Periodictable/workspace
+ &gt; /usr/bin/git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ &gt; /usr/bin/git config remote.origin.url https://github.com/Alwaysalle/FinalExam-Periodictable.git # timeout=10
+Fetching upstream changes from https://github.com/Alwaysalle/FinalExam-Periodictable.git
+ &gt; /usr/bin/git --version # timeout=10
+using .gitcredentials to set credentials
+ &gt; /usr/bin/git config --local credential.username Alwaysalle # timeout=10
+ &gt; /usr/bin/git config --local credential.helper store --file=/var/folders/1g/kt2l2llx4sscrrctwqrgkxlw0000gn/T/git2542535149798680920.credentials # timeout=10
+ &gt; /usr/bin/git -c core.askpass=true fetch --tags --progress https://github.com/Alwaysalle/FinalExam-Periodictable.git +refs/heads/*:refs/remotes/origin/*
+ &gt; /usr/bin/git config --local --remove-section credential # timeout=10
+ &gt; /usr/bin/git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ &gt; /usr/bin/git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 084ed0346573e259f23cb8801875839383112b01 (refs/remotes/origin/master)
+ &gt; /usr/bin/git config core.sparsecheckout # timeout=10
+ &gt; /usr/bin/git checkout -f 084ed0346573e259f23cb8801875839383112b01
+ &gt; /usr/bin/git rev-list 084ed0346573e259f23cb8801875839383112b01 # timeout=10
+Parsing POMs
+[workspace] $ /Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/bin/java -cp /Users/Alicia/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven31-agent-1.5.jar:/Users/Alicia/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven_3.3.9/boot/plexus-classworlds-2.5.2.jar:/Users/Alicia/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven_3.3.9/conf/logging jenkins.maven3.agent.Maven31Main /Users/Alicia/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven_3.3.9 /Users/Alicia/.jenkins/war/WEB-INF/lib/remoting-2.53.3.jar /Users/Alicia/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven31-interceptor-1.5.jar /Users/Alicia/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.5.jar 65242
+&lt;===[JENKINS REMOTING CAPACITY]===&gt;ï¿½ï¿½ï¿½channel started
+Executing Maven:  -B -f /Users/Alicia/.jenkins/jobs/FinalExam - Periodictable/workspace/pom.xml com.smartbear.soapui:soapui-maven-plugin:test -DprojectFile=periodictable-soap-project.xml
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building soapUI project 0.0.1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- soapui-maven-plugin:5.0.0:test (default-cli) @ soapui-project ---
+SoapUI 5.0.0 Maven2 TestCase Runner
+11:35:16,747 WARN  [SoapUI] Missing folder [/Users/Alicia/.jenkins/jobs/FinalExam - Periodictable/workspace/ext] for external libraries
+11:35:17,353 INFO  [DefaultSoapUICore] initialized soapui-settings from [/Users/Alicia/soapui-settings.xml]
+11:35:18,344 INFO  [WsdlProject] Loaded project from [file:/Users/Alicia/.jenkins/jobs/FinalExam%20-%20Periodictable/workspace/periodictable-soap-project.xml]
+11:35:19,654 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [periodictable-exam]
+11:35:19,656 INFO  [SoapUITestCaseRunner] Running Project [periodictable-exam], runType = SEQUENTIAL
+11:35:19,675 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [PeriodicTable_TestCase]
+11:35:19,687 INFO  [SoapUITestCaseRunner] running step [GetAtoms]
+11:35:19,897 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
+11:35:19,898 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: POST /periodictable.asmx HTTP/1.1
+11:35:20,245 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
+11:35:20,250 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
+11:35:20,308 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+11:35:20,308 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+11:35:20,308 INFO  [SoapUITestCaseRunner] Assertion [Not Contains] has status VALID
+11:35:20,308 INFO  [SoapUITestCaseRunner] Assertion [XPath Match] has status VALID
+11:35:20,309 INFO  [SoapUITestCaseRunner] running step [ElementName]
+11:35:20,361 INFO  [SoapUITestCaseRunner] running step [GetAtomicNumber]
+11:35:20,364 DEBUG [HttpClientSupport$SoapUIHttpClient] Stale connection check
+11:35:20,366 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
+11:35:20,366 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: POST /periodictable.asmx HTTP/1.1
+11:35:20,932 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
+11:35:20,932 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
+11:35:20,944 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+11:35:20,944 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+11:35:20,944 INFO  [SoapUITestCaseRunner] Assertion [Not Contains] has status VALID
+11:35:20,944 INFO  [SoapUITestCaseRunner] running step [Weight]
+11:35:21,403 INFO  [log] Aluminium
+11:35:21,412 INFO  [SoapUITestCaseRunner] running step [GetAtomicWeight]
+11:35:21,413 DEBUG [HttpClientSupport$SoapUIHttpClient] Stale connection check
+11:35:21,415 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
+11:35:21,415 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: POST /periodictable.asmx HTTP/1.1
+11:35:21,946 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
+11:35:21,947 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
+11:35:21,951 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+11:35:21,952 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+11:35:21,952 INFO  [SoapUITestCaseRunner] Assertion [Not Contains] has status VALID
+11:35:21,952 INFO  [SoapUITestCaseRunner] running step [FetchResponse_Atoms]
+11:35:22,098 INFO  [log] Antimony
+11:35:22,098 INFO  [SoapUITestCaseRunner] running step [GetElementSymbol]
+11:35:22,100 DEBUG [HttpClientSupport$SoapUIHttpClient] Stale connection check
+11:35:22,102 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
+11:35:22,102 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: POST /periodictable.asmx HTTP/1.1
+11:35:22,674 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
+11:35:22,674 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
+11:35:22,679 INFO  [SoapUITestCaseRunner] Assertion [Not Contains] has status VALID
+11:35:22,679 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+11:35:22,679 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+11:35:22,680 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [PeriodicTable_TestCase], time taken: 2973ms, status: FINISHED
+11:35:22,681 INFO  [SoapUITestCaseRunner] Project [periodictable-exam] finished with status [FINISHED] in 3017ms
+[JENKINS] Recording test results
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.571 s
+[INFO] Finished at: 2016-05-23T11:35:22+02:00
+[INFO] Final Memory: 23M/204M
+[INFO] ------------------------------------------------------------------------
+[JENKINS] Archiving /Users/Alicia/.jenkins/jobs/FinalExam - Periodictable/workspace/pom.xml to com.scania.cbm.test/soapui-project/0.0.1/soapui-project-0.0.1.pom
+channel stopped
+Finished: SUCCESS
+</pre></body></html>Ztext/plainUUTF-8P_Ehttp://localhost:8080/job/FinalExam%20-%20Periodictable/4/consoleText    ( : P n … ” Í Ø Þ ß                           !'
